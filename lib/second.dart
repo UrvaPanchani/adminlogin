@@ -91,7 +91,8 @@ class _secondState extends State<second> {
                     return third();
                   },));
                 }else{
-
+                  SnackBar snack = SnackBar(backgroundColor: Colors.redAccent,content: Text("Wrong Details",style: TextStyle(fontWeight: FontWeight.w900),));
+                  ScaffoldMessenger.of(context).showSnackBar(snack);
                 }
               }, child: Text("Login")),
             ],
